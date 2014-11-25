@@ -1,0 +1,28 @@
+{
+  "name": "bevis",
+  "version": "0.0.1",
+  "description": "BEViS css class naming tool",
+  "main": "index",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fi11/bevis.git"
+  },
+  "keywords": [
+    "bevis",
+    "bem",
+    "css"
+  ],
+  "bugs": {
+    "url": "https://github.com/fi11/bevis/issues"
+  },
+  "homepage": "https://github.com/fi11/bevis",
+  "author": "Pavel Silin",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "~1.10.0",
+    "mocha": "~2.0.1"
+  },
+  "scripts": {
+    "tests": "./node_modules/.bin/mocha --reporter spec"
+  }
+}
