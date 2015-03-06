@@ -1,6 +1,6 @@
-var VIEW_SEPARATOR = '_';
-var ELEM_SEPARATOR = '__';
-var STATE_PREFIX = '_';
+var VIEW_SEPARATOR = "_";
+var ELEM_SEPARATOR = "__";
+var STATE_PREFIX = "_";
 
 function collectState(a, b, c, d, e, f, g, h, i, j, err) {
     if (err) {
@@ -40,7 +40,6 @@ BevisBlock.prototype.name = function(a, b, c, d, e, f, g, h, i, j) {
             h || null,
             i || null,
             j || null);
-
 };
 
 BevisBlock.prototype.elem = function(elemName, a, b, c, d, e, f, g, h, i, j) {
