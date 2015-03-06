@@ -11,9 +11,9 @@ $ npm install bevis
 ## Example
 
 ```js
-var bevis = require('bevis')();
-var block1 = bevis.block('butthead');
-var block2 = bevis.block('beavis', 'great-cornholio');
+var Block = require('bevis');
+var block1 = new Block('butthead');
+var block2 = new Block('beavis', 'great-cornholio');
 
 block1.name();
 block1.elem();

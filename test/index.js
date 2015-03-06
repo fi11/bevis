@@ -1,8 +1,8 @@
 var expect = require('chai').expect;
-var bevis = require('../index.js')();
+var Block = require('../index.js');
 
 describe('Given we have block with name butthead', function() {
-    var b = bevis.block('butthead');
+    var b = new Block('butthead');
     var className  = '';
 
     describe('When we call name without arguments', function() {
@@ -88,7 +88,7 @@ describe('Given we have block with name butthead', function() {
 });
 
 describe('Given we have block beavis with view great-cornholio', function() {
-    var b = bevis.block('beavis', 'great-cornholio');
+    var b = new Block('beavis', 'great-cornholio');
     var className  = '';
 
     describe('When we call name without arguments', function() {
@@ -101,7 +101,7 @@ describe('Given we have block beavis with view great-cornholio', function() {
 });
 
 describe('Given we have block beavis with null view name', function() {
-    var b = bevis.block('beavis', null);
+    var b = new Block('beavis', null);
     var className  = '';
 
     describe('When we call name without arguments', function() {
@@ -114,7 +114,7 @@ describe('Given we have block beavis with null view name', function() {
 });
 
 describe('Given we have block beavis with empty string view name', function() {
-    var b = bevis.block('beavis', '');
+    var b = new Block('beavis', '');
     var className  = '';
 
     describe('When we call name without arguments', function() {
